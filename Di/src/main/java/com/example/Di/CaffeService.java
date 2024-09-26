@@ -2,13 +2,13 @@ package com.example.Di;
 
 
 public class CaffeService {
-    private Americano americano;
-    public CaffeService(Americano americano){
-        this.americano=americano;
+    private Drink drink;
+    public CaffeService(Drink drink){
+        this.drink=drink;
     }
     public int sellAmericano(){
-        System.out.println("Americano price: "+americano.getPrice());
-        return americano.getPrice();
+        System.out.println("Americano price: "+drink.getPrice());
+        return drink.getPrice();
     }
 
 }

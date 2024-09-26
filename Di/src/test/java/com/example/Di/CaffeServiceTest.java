@@ -12,7 +12,7 @@ public class CaffeServiceTest {
         //given
        CaffeService caffeService;
         //when
-       caffeService=new CaffeService(new Americano());
+       caffeService=new CaffeService(new Juice());
         //then
         Assertions.assertEquals(caffeService.sellAmericano(),4000);
     }

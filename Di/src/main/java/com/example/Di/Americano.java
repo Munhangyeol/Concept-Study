@@ -4,12 +4,16 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
 
-@Getter
+
 @Setter
-public class Americano {
+public class Americano implements Drink{
     private int price;
     public Americano(){
         price=4000;
     }
 
+    @Override
+    public int getPrice() {
+        return price;
+    }
 }
