@@ -14,6 +14,6 @@ public class CaffeServiceTest {
         //when
        caffeService=new CaffeService(new Juice());
         //then
-        Assertions.assertEquals(caffeService.sellAmericano(),4000);
+        Assertions.assertEquals(caffeService.sellJuice(),4000);
     }
 }
