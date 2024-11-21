@@ -1,6 +1,9 @@
-package com.example.Di;
+package com.example.Di.AutoDi;
 
-public class Juice implements Drink{
+import org.springframework.stereotype.Component;
+
+@Component
+public class Juice implements Drink {
     int price;
     public Juice(){
         this.price=5000;

@@ -3,11 +3,11 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/Di" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Concept" />
         <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Di" />
+            <option value="$PROJECT_DIR$/Concept" />
           </set>
         </option>
       </GradleProjectSettings>

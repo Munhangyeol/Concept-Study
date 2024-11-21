@@ -1,5 +1,7 @@
 package com.example.Di;
 
+import com.example.Di.PassiveDi.CaffeService;
+import com.example.Di.PassiveDi.Juice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

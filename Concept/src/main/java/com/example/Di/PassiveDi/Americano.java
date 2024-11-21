@@ -1,12 +1,10 @@
-package com.example.Di;
+package com.example.Di.PassiveDi;
 
-import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Service;
-
+import org.springframework.stereotype.Component;
 
 @Setter
-public class Americano implements Drink{
+public class Americano implements Drink {
     private int price;
     public Americano(){
         price=4000;

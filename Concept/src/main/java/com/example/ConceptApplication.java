@@ -1,13 +1,14 @@
-package com.example.Di;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DiApplication {
+public class ConceptApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DiApplication.class, args);
+
+		SpringApplication.run(ConceptApplication.class, args);
 	}
 
 }
