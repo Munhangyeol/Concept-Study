@@ -1,6 +1,6 @@
-package com.example.EntityPractice;
+package com.example.Aop;
 
-import com.example.EntityPractice.service.StudentService;
+import com.example.Aop.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class StudentController {
     private final StudentService service;
-
+    @TimeTrace
     @GetMapping("/identity")
     public String saveWithIdentity(){
         service.saveIdentity();
         return "!!";
     }
-
+    @TimeTrace
     @GetMapping("/sequence")
     public String  saveWithSequence(){
        service.saveSequence();

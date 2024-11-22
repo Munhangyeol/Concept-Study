@@ -1,4 +1,4 @@
-package com.example.EntityPractice;
+package com.example.Aop;
 
 import lombok.extern.log4j.Log4j2;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -13,14 +13,13 @@ import org.springframework.util.StopWatch;
 @Aspect
 public class TimeTraceAspect {
     // @Pointcut("execution(* com.example.demo.repository..*(..))")
-    @Pointcut("@annotation(com.example.entityPractice.TimeTrace)")
+    @Pointcut("@annotation(com.example.Aop.TimeTrace)")
     private void timeTracePointcut() {
     }
 
     @Around("timeTracePointcut()")
     public Object traceTime(ProceedingJoinPoint joinPoint) throws Throwable {
         StopWatch stopWatch = new StopWatch();
-
         try {
             stopWatch.start();
             return joinPoint.proceed(); // 실제 타겟 호출

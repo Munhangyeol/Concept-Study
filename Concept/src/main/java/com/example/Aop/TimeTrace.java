@@ -1,4 +1,4 @@
-package com.example.EntityPractice;
+package com.example.Aop;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

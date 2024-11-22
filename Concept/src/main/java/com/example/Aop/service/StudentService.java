@@ -1,8 +1,8 @@
-package com.example.EntityPractice.service;
+package com.example.Aop.service;
 
-
-import com.example.EntityPractice.domain.IdentityStudent;
-import com.example.EntityPractice.domain.SequenceStudent;
+import com.example.Aop.TimeTrace;
+import com.example.Aop.domain.IdentityStudent;
+import com.example.Aop.domain.SequenceStudent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +13,7 @@ public class StudentService {
     private final SequenceStudentRepository sequenceStudentRepository;
     private int insertNum=1000;
 
+    @TimeTrace
     public void saveIdentity(){
         for(int i=0; i<insertNum;i++){
             System.out.println("save I: "+i);
@@ -21,6 +22,7 @@ public class StudentService {
                     .build());
         }
     }
+    @TimeTrace
     public void saveSequence(){
         for(int i=0; i<insertNum;i++){
             System.out.println("save I: "+i);
