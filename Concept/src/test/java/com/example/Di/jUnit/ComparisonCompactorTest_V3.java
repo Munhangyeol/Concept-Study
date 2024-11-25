@@ -1,6 +1,6 @@
 package com.example.Di.jUnit;
 
-import com.example.cleancode.jUnit.v4.ComparisonCompactor;
+import com.example.cleancode.jUnit.v6.ComparisonCompactor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
