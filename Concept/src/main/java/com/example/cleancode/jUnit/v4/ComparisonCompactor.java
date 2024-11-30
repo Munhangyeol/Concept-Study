@@ -14,8 +14,6 @@ package com.example.cleancode.jUnit.v4;
  *    따라서
  * -  의도를 분명히 드러내기 위해서 findCommonPrefixAndSuffix()로 묶음
  * -  이 과정에서 findCommonPrefix에서 반환하던 prefix를 원래대로 다시 변수에 담음
- *
- *
 
  *
  */
@@ -64,7 +62,7 @@ public class ComparisonCompactor {
     }
     //3번의 결과(인자로 넘기지 않고)
     private void findCommonPrefixAndSuffix() {
-        findCommonprefixIndex();
+       findCommonprefixIndex();
         int expectedSuffix = expected.length() - 1;
         int actualSuffix = actual.length() - 1;
         for (; actualSuffix >= prefixIndex && expectedSuffix >= prefixIndex; actualSuffix--, expectedSuffix--) {

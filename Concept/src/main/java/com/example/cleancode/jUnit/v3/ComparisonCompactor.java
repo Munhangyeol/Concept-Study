@@ -89,6 +89,7 @@ public class ComparisonCompactor {
     private void findCommonSuffix() {
         int expectedSuffix = expected.length() - 1;
         int actualSuffix = actual.length() - 1;
+
         for (; actualSuffix >= prefix && expectedSuffix >= prefix; actualSuffix--, expectedSuffix--) {
             if (expected.charAt(expectedSuffix) != actual.charAt(actualSuffix)) {
                 break;

@@ -1,13 +1,11 @@
 package com.example;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.Oop.chef.steak.TBornSteackPart;
 
-@SpringBootApplication
 public class ConceptApplication {
 	public static void main(String[] args) {
-
-		SpringApplication.run(ConceptApplication.class, args);
+		TBornSteackPart tBornSteack = new TBornSteackPart();
+		tBornSteack.readyToCook();
 	}
 
 }

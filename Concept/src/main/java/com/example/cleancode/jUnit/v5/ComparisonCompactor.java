@@ -86,6 +86,7 @@ public class ComparisonCompactor {
 
     private boolean canBeCompact() {
         //긍정문으로 바꾸면서 변화
+        //
         return expected != null && actual != null && areDiffrerentStrings();
     }
 
@@ -109,7 +110,6 @@ public class ComparisonCompactor {
         return result;
     }*/
     private String compactString(String source) {
-
         return computeCommonprefixLength()+DELTA_START + source.substring(prefixLength, source.length() - suffixLength ) + DELTA_END
                 +computeCommonSuffix();
     }

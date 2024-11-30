@@ -6,7 +6,7 @@ package com.example.cleancode.jUnit.v1;
 /**
  * 이 모률은 문자열 비교 오류를 파악할 때 유용한 코드
  * ComparisonCompactor: 두 문자열을 받아 차이를 반환하는 코드
- * ABCDE  ABXDE--> <..B[X]D..>
+ * ABCDE  ABXDE--> <.AB[X]DE.>
  * 이 코드를 점진적으로 리팩토링해보자
  * etc.. Junit에서 제공하는 format이 작동을 안해서 직접 구현함
  *
@@ -47,7 +47,6 @@ public class ComparisonCompactor {
         if (message != null && message.length() > 0) {
             formatted = message + " ";
         }
-
         return formatted + "expected:<" + expected + "> but was:<" + actual + ">";
     }
 

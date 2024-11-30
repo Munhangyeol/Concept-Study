@@ -16,7 +16,6 @@ public class TimeTraceAspect {
     @Pointcut("@annotation(com.example.Aop.TimeTrace)")
     private void timeTracePointcut() {
     }
-
     @Around("timeTracePointcut()")
     public Object traceTime(ProceedingJoinPoint joinPoint) throws Throwable {
         StopWatch stopWatch = new StopWatch();

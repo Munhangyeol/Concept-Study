@@ -46,7 +46,7 @@ public class ComparisonCompactor {
     }
 
     private boolean shouldNotCompact() {
-        return expected == null || actual == null || areStringsEqual();
+        return expected != null && actual != null && areStringsEqual();
     }
 
     public  String format(String message, Object expected, Object actual) {
