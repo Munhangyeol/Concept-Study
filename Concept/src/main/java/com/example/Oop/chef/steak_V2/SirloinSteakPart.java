@@ -1,15 +1,15 @@
-package com.example.Oop.chef.steak;
+package com.example.Oop.chef.steak_V2;
 
 import com.example.Oop.chef.Utensil.Utensil;
-import com.example.Oop.chef.Utensil.UtensilManager;
 
 import java.util.Arrays;
 
-abstract public class SteakPart {
-    protected Utensil []utensilsForSteak;
-    protected String butter;
-    protected String steak_type;
-    public void readyToCook(Utensil[] utensils,String butter){
+public class SirloinSteakPart extends SteakPart implements CookSteak,ReadySteak,RestSteak{
+    public SirloinSteakPart(String steak_type){
+        this.steak_type=steak_type;
+    }
+    @Override
+    public void readyToCook(Utensil[] utensils, String butter){
         utensilsForSteak=utensils;
         this.butter=butter;
         System.out.println("Ready To Cook");
@@ -22,4 +22,9 @@ abstract public class SteakPart {
     public void resting(){
         System.out.println("Resting");
     }
+
+
+
+
+
 }
