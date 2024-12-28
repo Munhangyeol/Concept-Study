@@ -1,17 +1,13 @@
 package com.example;
 
-import com.example.Oop.chef.Utensil.Utensil;
-import com.example.Oop.chef.steak.SteakPart;
-import com.example.Oop.chef.steak.TBornSteackPart;
 
-import static com.example.Oop.chef.Utensil.Utensil.PAN;
-import static com.example.Oop.chef.Utensil.Utensil.POT;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class ConceptApplication {
 	public static void main(String[] args) {
-		SteakPart steakPart=new TBornSteackPart("T-Born");
-		steakPart.readyToCook(new Utensil[]{PAN,POT},"butter");
-		steakPart.cook();
+		SpringApplication.run(ConceptApplication.class,args);
 	}
 
 }
