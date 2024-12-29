@@ -13,3 +13,6 @@ https://velog.io/@msw0909/Entity%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0
 OOP의 가장 본질적인 이야기인 객체와 클래스가 무엇인지, SOLID가 무엇인지를 다룹니다.
 
 [OOP와 SOLID의 이해_24년 하반기 전환형 인턴 백엔드_문한결.pdf](https://github.com/user-attachments/files/18017186/OOP.SOLID._24._.pdf)
+
+### 4.Transactional
+트렌잭션 메니저가 트랜잭션을 생성하는 것부터, AOP 트랜잭션 프록시중 실수하기 쉬운 예시등 트렌잭션의 코드드을 다룹니다.
