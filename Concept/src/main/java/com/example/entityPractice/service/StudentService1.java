@@ -6,6 +6,7 @@ import com.example.entityPractice.domain.SequenceStudent1;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+
 @Service
 @RequiredArgsConstructor
 public class StudentService1 {
